@@ -1,0 +1,26 @@
+
+
+
+---Quiz controller endpoints
+
+POST  -- it will submit the quiz with the array of json objs from request body 
+/quiz/submit/{id}
+
+POST -- it will create a quiz - in request param u have to send -- ?category=Science&numQ=2&title=Any title for quiz
+/quiz/create
+
+GET --
+/quiz/get/{id}
+
+
+
+---Question controller endpoints
+
+POST  --  in request body - pass json object of question class - it will save the question
+/question/save
+
+GET  -- in request param - pass - category - return u a questions by category
+/question/category/{category}
+
+GET   --- it will return all the questions from the database
+/question/allquestions
